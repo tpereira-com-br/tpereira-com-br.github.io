@@ -1,0 +1,363 @@
+.menu {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #005f60;
+    width: 100%;
+    max-width: 100%;
+    min-height: 10vh;
+    padding: 0
+}
+
+.logo {
+    display: none;
+    width: auto;
+    height: 80%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 5vw
+}
+
+.menu>img:not(.logo) {
+    position: absolute;
+    right: 5vw;
+    display: none;
+    color: white;
+    height: 50%;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.container_menu_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.menu_link {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold
+}
+
+.menu_link:hover {
+    text-shadow: 0 0 50px #FFFFFF, 0 0 50px #FFFFFF
+}
+
+.banner_principal {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    padding: 0;
+    background-color: #005f60;
+    background-size: cover;
+    background-position: top;
+    background-attachment: local
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 90vh;
+    padding: 5vw
+}
+
+.titulo * {
+    color: white;
+    text-align: center
+}
+
+.titulo h1 {
+    font-size: 4rem
+}
+
+.titulo h2 {
+    font-size: 2rem
+}
+
+.perfil {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50vw;
+    height: 90vh
+}
+
+.perfil img {
+    width: 100%;
+    height: auto
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+    font-size: 2rem
+}
+
+.conteudo *:not(button):not(input):not(textarea):not(h1) {
+    font-size: 1.3rem;
+    text-align: justify
+}
+
+.conteudo h1 {
+    font-size: 1.5rem;
+    text-align: center
+}
+
+.redes_sociais {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap
+}
+
+.redes_sociais img {
+    margin: 20px
+}
+
+.proficiencia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 50px
+}
+
+.lista_proficiencias {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.barra {
+    width: 70%;
+    height: 2vw;
+    background: white;
+    display: flex
+}
+
+.ponto {
+    background: green;
+    width: 10%;
+    border: 1px solid white;
+    margin: 0
+}
+
+.conteudo div.bloco_texto {
+    font-size: 1.2rem;
+    width: 40%;
+    line-height: 30px;
+    text-align: left
+}
+
+.conteudo img {
+    margin-bottom: 30px
+}
+
+.C1 {
+    background: #009fa0;
+    color: white
+}
+
+.C1 *:not(button):not(input):not(textarea) {
+    color: white
+}
+
+.C2 {
+    background: #008080;
+    color: white
+}
+
+.C2 *:not(button):not(input):not(textarea) {
+    color: white
+}
+
+.img_float_left {
+    float: left;
+    width: 60%;
+    margin-right: 10%;
+    border-radius: 10px
+}
+
+.img_float_right {
+    float: right;
+    width: 60%;
+    margin-left: 10%;
+    border-radius: 10px
+}
+
+.rodapé {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 10vh;
+    background: #005f60;
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    overflow: hidden
+}
+
+.rodapé * {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+    padding-left: 10px;
+    padding-right: 10px
+}
+
+@media only screen and (orientation:portrait), screen and (max-width:800px) {
+    .menu {
+        position: fixed;
+        top: 0;
+        justify-content: flex-start;
+        padding: 0;
+        height: 20vw;
+        max-height: 90vh
+    }
+    .menu>img {
+        display: inline
+    }
+    .menu>img:not(.logo) {
+        display: inline
+    }
+    .container_menu_top {
+        height: 0;
+        overflow: hidden;
+        background-color: rgba(00, 95, 96, .9)
+    }
+    .menu_link {
+        width: 100%;
+        color: white;
+        font-size: 1rem
+    }
+    .menu_link:hover {
+        text-shadow: 0 0 20px #FFFFFF, 0 0 20px #FFFFFF
+    }
+    .banner_principal {
+        margin-top: 20vw;
+        height: calc(100% - 20vw);
+        background-image: none
+    }
+    .titulo {
+        width: 100vw
+    }
+    .titulo h1 {
+        font-size: 2rem
+    }
+    .titulo h2 {
+        font-size: 1rem
+    }
+    .perfil {
+        display: none
+    }
+    .conteudo {
+        min-height: 90vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        font-size: 1rem
+    }
+    .conteudo h1 {
+        font-size: 1.2rem
+    }
+    .redes_sociais {
+        width: 90%;
+        margin: 5% 0
+    }
+    .redes_sociais a {
+        width: 20%;
+        margin: 0 5%;
+        height: auto
+    }
+    .redes_sociais img {
+        width: 100%;
+        margin: 0
+    }
+    .proficiencia {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 50px
+    }
+    .lista_proficiencias {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap
+    }
+    .barra {
+        width: 100%;
+        height: 6vw;
+        background: white;
+        display: flex
+    }
+    .ponto {
+        display: inline;
+        background: green;
+        border: 1px solid white;
+        margin: 0
+    }
+    .conteudo div.bloco_texto {
+        font-size: 1rem;
+        width: 100%;
+        line-height: 25px
+    }
+    .conteudo *:not(button):not(input):not(textarea):not(h1) {
+        font-size: 1rem
+    }
+    .conteudo *:not(button):not(input):not(textarea):not(h1) {
+        font-size: 1rem;
+        text-align: justify
+    }
+    .img_float_left {
+        float: none;
+        width: 100%;
+        margin: auto;
+        border-radius: 0
+    }
+    .img_float_right {
+        float: none;
+        width: 100%;
+        margin: auto;
+        border-radius: 0
+    }
+    .rodapé * {
+        line-height: 1rem
+    }
+}
